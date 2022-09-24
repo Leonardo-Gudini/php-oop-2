@@ -9,10 +9,11 @@ class Estate {
 
     use Address;
 
-    public function __construct($address, $flor, $conditions)
+    public function __construct($flor, $conditions, $street, $civicNumber)
     {
         $this->flor = $flor;
         $this->conditions = $conditions;
-        $this->address = $address;
+        $this->street = $street;
+        $this->civicNumber = $civicNumber;
     }
 }
